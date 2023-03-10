@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,25 +12,8 @@
 </head>
 
 <body onload="includeHTML()">
-
     <div w3-include-html="header.html"></div> <!-- damit andere Html verbunden -->
-
-
     <div>
-
-        <header class="header-container">
-            <div class="logo">
-                <a href=""><img class="logo-png" src="logo.png" alt="Kochwelt-logo"></a>
-            </div>
-
-            <div class="menu">
-                <a href="" class="menu">Start</a>
-                <a href="" class="menu">Rezept des Tages</a>
-                <a href="" class="menu">Kontakt</a>
-                <a href="" class="menu">Impressum</a>
-            </div>
-        </header>
-
         <div class="erste-container">
 
             <div class="img-ubersicht">
@@ -47,30 +29,22 @@
                     <button class="rezept-offnen">Rezept öffnen</button>
                 </div>
             </div>
-
         </div>
-
         <div class="speise-container">
-
             <h2 class="speise-container-h">Lust auf was Neues?</h2>
-
             <div class="child-container">
                 <img src="img/croissant.jpg" alt="">
                 <img src="img/croissant.jpg" alt="">
                 <img src="img/croissant.jpg" alt="">
             </div>
-
             <div class="child-container-text">
                 <h2>Frische Croissants</h2>
                 <h2>Frische Croissants</h2>
                 <h2>Frische Croissants</h2>
             </div>
-
         </div>
-
         <div class="letzte-container">
             <h2>Pfanne vs. Wok - Was ist besser?</h2>
-
             <div class="letzte-container-child">
                 <h3 class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores voluptatem
                     reiciendis aut voluptate voluptatibus pariatur ratione tempore dolore. Reprehenderit, cupiditate
@@ -78,29 +52,8 @@
                     animi eum repellendus sequi enim omnis libero?</h3>
                 <img class="right" src="img/wok.jpg" alt="">
             </div>
-
         </div>
-
-
-        <div class="footer">
-
-            <div class="logo-s">
-                <img src="img/logo_small.png" alt="">
-            </div>
-
-            <div class="footer-a">
-                <a href="">Datenschutz</a>
-                <a href="">Kontakt</a>
-                <a href="">Impressum</a>
-            </div>
-        </div>
-
-
-
+        <div w3-include-html="footer.html"></div> <!-- damit andere Html verbunden -->
     </div>
-
-
-
 </body>
-
 </html>
