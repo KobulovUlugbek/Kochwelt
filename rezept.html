@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9fdfcba871.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="includeHTML()">
     <div w3-include-html="header.html"></div> <!-- damit andere Html verbunden -->
-    <div>
+    <div class="rezept-container">
         <div class="rezept-img">
-            <p class="p-tag">Sommer Salat</p>
-            <img class="salat-img" src="salat-for-rezept.jpg" alt="">
+            <h2 class="p-tag">Sommer Salat</h2> <!-- da es eine Überschrift ist sollte man hier eine h2 nehmen nicht p-->
+            <img class="salat-img" src="./img/salat-for-rezept.jpg" alt="">
             <div class="buttons">
                 <button><i class="fa-regular fa-clock"></i> 15 Min</button>
                 <button><i class="fa-solid fa-kitchen-set"></i> simpel</button>
@@ -72,25 +75,25 @@
             </table>
         </div>
         <div class="footer-rezeptseite">
-            <p>Zubereitung</p>
+            <h3>Zubereitung</h3> <!-- Eine Überschrift-->
             <div class="buttons-rezept">
                 <button><i class="fa-regular fa-clock"></i> ca.15 Minuten</button>
                 <button><i class="fa-regular fa-clock"></i> Gesamtzeit ca.15 Minuten</button>
             </div>
-            <h3 class="beschreibung">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur iure iste,
+            <p class="beschreibung">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur iure iste,
                 sunt ad, delectus dolorum saepe repellat, expedita similique quas accusantium autem nam vel. Cum
                 explicabo totam nesciunt, laudantium magni tenetur voluptas hic nisi odit ea eum quidem beatae
-                consequatur rem neque non molestiae veniam, veritatis adipisci. Atque, molestias!</h3>
+                consequatur rem neque non molestiae veniam, veritatis adipisci. Atque, molestias!</p> <!-- Text auf p-->
         </div>
         <div class="autor">
             <h2>Rezept erstellt von</h2>
             <div class="autor-img">
-                <img src="profil-photo.jpeg" alt="">
+                <img src="./img/profil-photo.jpeg" alt="">
                 <h2>Ulugbek</h2>
             </div>
         </div>
-        <div w3-include-html="footer.html"></div> <!-- damit andere Html verbunden -->
     </div>
+    <div w3-include-html="footer.html"></div> <!-- damit andere Html verbunden -->
 </body>
 
 </html>

@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
-    <link rel="shortcut icon" href="img/logo_small.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9fdfcba871.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="includeHTML()">
@@ -21,10 +24,10 @@
             </div>
 
             <div class="rezept-ubersicht">
-                <h1>Französische Croissants</h1>
-                <h2 class="beschreibung-gericht">Schmackhafte Croissants können auch zu Hause sehr einfach gebacken
+                <h2>Französische Croissants</h2>  <!-- H1 wird für den Namen der Webseite benutzt-->
+                <p class="beschreibung-gericht">Schmackhafte Croissants können auch zu Hause sehr einfach gebacken
                     werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
-                    Frühstück zaubern.</h2>
+                    Frühstück zaubern.</p> <!-- Für eine Beschreibung nummt man kein h2-->
                 <div class="button-rezept">
                     <button class="rezept-offnen">Rezept öffnen</button>
                 </div>
@@ -33,23 +36,23 @@
         <div class="speise-container">
             <h2 class="speise-container-h">Lust auf was Neues?</h2>
             <div class="child-container">
-                <img src="img/croissant.jpg" alt="">
-                <img src="img/croissant.jpg" alt="">
-                <img src="img/croissant.jpg" alt="">
+                <img src="./img/croissant.jpg" alt="">
+                <img src="./img/croissant.jpg" alt="">
+                <img src="./img/croissant.jpg" alt="">
             </div>
             <div class="child-container-text">
-                <h2>Frische Croissants</h2>
-                <h2>Frische Croissants</h2>
-                <h2>Frische Croissants</h2>
+                <h3>Frische Croissants</h3> <!-- Hier wird eher heine h3 genommen, da es eine unterüberschrift ist-->
+                <h3>Frische Croissants</h3> <!-- Hier wird eher heine h3 genommen, da es eine unterüberschrift ist-->
+                <h3>Frische Croissants</h3> <!-- Hier wird eher heine h3 genommen, da es eine unterüberschrift ist-->
             </div>
         </div>
         <div class="letzte-container">
             <h2>Pfanne vs. Wok - Was ist besser?</h2>
             <div class="letzte-container-child">
-                <h3 class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores voluptatem
+                <p class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores voluptatem
                     reiciendis aut voluptate voluptatibus pariatur ratione tempore dolore. Reprehenderit, cupiditate
                     accusamus voluptatem commodi est eligendi ad, corporis veniam modi eaque maiores! Nemo deserunt
-                    animi eum repellendus sequi enim omnis libero?</h3>
+                    animi eum repellendus sequi enim omnis libero?</p> <!-- Da es keine Überschrift ist, wird ein p genommen-->
                 <img class="right" src="img/wok.jpg" alt="">
             </div>
         </div>

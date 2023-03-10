@@ -1,5 +1,6 @@
 *{
     margin:0;
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
@@ -53,12 +54,10 @@ body{
 }
 
 .rezept-ubersicht h1{
-    font-weight: 500;
     padding-bottom: 10px;
 }
 
 .rezept-ubersicht h2{
-    font-weight: 100;
     display: flex;
     justify-content: flex-start;
     text-align:left;
@@ -113,14 +112,12 @@ body{
 }
 
 .child-container-text h2{
-    font-weight: 100;
 }
 
 .speise-container-h{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    font-weight: 300;
     font-size: 25px;
 }
 
@@ -135,7 +132,6 @@ body{
     display: flex;
     padding: 25px;
     font-size: 25px;
-    font-weight: 500;
 }
 
 .letzte-container-child{
@@ -154,9 +150,8 @@ body{
     margin-bottom: 90px;
 }
 
-.letzte-container-child h3{
+.letzte-container-child p{
     font-size: 18px;
-    font-weight: 300;
     margin: 15px 50px 10px;
 }
 
@@ -202,7 +197,6 @@ body{
     align-items: center;
     margin: 50px 60px 0px 60px;
     font-size: 28px;
-    font-weight: 100;
 }
 
 .buttons{
@@ -219,6 +213,7 @@ body{
     font-size: 20px;
     font-weight:lighter;
     padding: 5px 18px 5px 15px;
+    font-weight: 300;
 }
 
 .strich{
@@ -244,7 +239,6 @@ body{
 }
 
 .zutaten h2{
-    font-weight: 100;
     margin-right: 15px;
 }
 
@@ -263,7 +257,6 @@ body{
 
 .stucke{
     font-size: 20px;
-    font-weight: 100;
     border-spacing: 0;
     width: 99%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
     height: 350px;
@@ -303,9 +296,10 @@ body{
     font-weight:lighter;
     padding: 5px 18px 5px 15px;
     margin-bottom: 35px;
+    font-weight: 300;
 }
 
-.footer-rezeptseite p{
+.footer-rezeptseite h3{
     display: flex;
     font-size: 25px;
     padding: 20px 0px 10px 0px;
@@ -313,7 +307,6 @@ body{
 }
 
 .beschreibung{ /* hier ist die Beschreibung vom Salat */
-    font-weight: 100;
     width: 96%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
 }
 
@@ -324,7 +317,6 @@ body{
 .autor h2{
     display: flex;
     font-size: 22px;
-    font-weight: 200;
     margin-left: 60px;
 }
 
@@ -355,4 +347,9 @@ body{
     text-decoration: underline solid 4px;
     color: rgb(59,127,71);
     text-underline-offset: 6px;
+}
+
+.rezept-container {
+    /* add this to look like mokup */
+    margin: 0px 130px;
 }
