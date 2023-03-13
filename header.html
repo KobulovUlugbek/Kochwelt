@@ -1,5 +1,5 @@
 <header class="header-container">
-        <a href="/"><img class="logo-png" src="logo.png" alt="Kochwelt"></a>
+    <a href="/"><img class="logo-png" src="logo.png" alt="Kochwelt"></a>
 
     <div class="menu">
         <a href="index.html" class="menu">Start</a>
@@ -8,6 +8,18 @@
         <a href="" class="menu">Impressum</a>
     </div>
     <div class="mobile-menu">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" onclick="showMobilNav()"></i>
     </div>
 </header>
+<div class="mobile-nav-container" id="mobileNav">
+    <div class="mobile-nav">
+        <i class="fa-solid fa-xmark" onclick="closeMobilNav()"></i>
+        <div class="mobile-nav-element">
+            <a href="index.html">Start</a>
+            <a href="rezept.html">Rezept des Tages</a>
+            <a href="">Kontakt</a>
+            <a href="">Impressum</a>
+        </div>
+    </div>
+    
+</div>
