@@ -363,6 +363,19 @@ body {
 }
 
 @media (max-width: 830px) {
+  .mobile-menu {
+    display: block;
+    font-size: 32px;
+  }
+  .mobile-menu:hover {
+    cursor: pointer;
+  }
+  .menu {
+    display: none;
+  }
+  .header-container {
+    align-items: center;
+  }
   .erste-container {
     padding: 50px 10px 50px 0px;
   }
@@ -425,17 +438,6 @@ body {
   .letzte-container-child img {
     margin: 0px 0px 16px 0px;
   }
-  .mobile-menu {
-    display: block;
-    margin-right: 24px;
-    font-size: 24px;
-  }
-  .mobile-menu:hover {
-    cursor: pointer;
-  }
-  .menu {
-    display: none;
-  }
   .footer {
     flex-direction: column;
   }
@@ -446,5 +448,10 @@ body {
   .footer .logo-s img {
     padding: 0px;
     margin: 16px 0px;
+  }
+}
+@media (max-width: 700px) {
+  .logo-png {
+    height: 60px;
   }
 }
