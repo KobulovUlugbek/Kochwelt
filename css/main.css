@@ -1,27 +1,27 @@
-*{
-  margin:0;
-  font-family: 'Raleway', sans-serif;
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
-body{
+body {
   margin: 0;
 }
 
-.header-container{
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  box-shadow: 0 0 16px 0 #0003;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
   padding: 0 10vw;
 }
 
-.logo-png{
+.logo-png {
   height: 96px;
   width: auto;
   padding-top: 0.6rem;
 }
 
-.menu{
+.menu {
   text-decoration: none;
   color: rgb(94, 94, 94);
   padding-bottom: 0.5rem;
@@ -40,7 +40,7 @@ body{
   display: none;
 }
 
-.erste-container{
+.erste-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -48,33 +48,33 @@ body{
   padding: 50px 10px 50px 50px;
 }
 
-.img-ubersicht img{
+.img-ubersicht img {
   height: 300px;
   border-radius: 2%;
   margin-left: 40px;
 }
 
-.rezept-ubersicht{
+.rezept-ubersicht {
   display: flex;
   justify-content: space-between;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-.rezept-ubersicht h1{
+.rezept-ubersicht h1 {
   padding-bottom: 10px;
 }
 
-.rezept-ubersicht h2{
+.rezept-ubersicht h2 {
   display: flex;
   justify-content: flex-start;
-  text-align:left;
+  text-align: left;
   align-items: center;
   margin-right: 20px;
   font-size: 16px;
   margin-bottom: 100px;
 }
 
-.rezept-offnen{
+.rezept-offnen {
   color: white;
   background-color: green;
   width: 200px;
@@ -85,17 +85,18 @@ body{
   cursor: pointer;
 }
 
-.button-rezept{
+.button-rezept {
   margin-bottom: 10px;
 }
 
-.speise-container{
+.speise-container {
   background-color: rgb(238, 238, 238);
   padding: 30px 20px;
   padding-bottom: 60px;
 }
 
-.child-container img{
+.child-container img {
+  height: -moz-fit-content;
   height: fit-content;
   width: 260px;
   border-radius: 25px 25px 25px 25px;
@@ -103,14 +104,14 @@ body{
   padding: 5px;
 }
 
-.child-container{
+.child-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0px 0px 8px 0px;
 }
 
-.child-container-text{
+.child-container-text {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -118,34 +119,34 @@ body{
   font-size: 13px;
 }
 
-
-.speise-container-h{
+.speise-container-h {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   font-size: 25px;
 }
 
-.letzte-container{
+.letzte-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.letzte-container h2{
+.letzte-container h2 {
   display: flex;
   padding: 25px;
   font-size: 25px;
 }
 
-.letzte-container-child{
+.letzte-container-child {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
-.letzte-container-child img{
+.letzte-container-child img {
+  height: -moz-fit-content;
   height: fit-content;
   width: 260px;
   border-radius: 25px 25px 25px 25px;
@@ -155,48 +156,49 @@ body{
   margin-bottom: 90px;
 }
 
-.letzte-container-child p{
+.letzte-container-child p {
   font-size: 18px;
   margin: 15px 50px 10px;
 }
 
-.footer{
+.footer {
   background-color: rgb(76, 73, 73);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-s img{
+.logo-s img {
   width: 50px;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 20px 0px 20px 40px;
 }
 
-.footer-a{
+.footer-a {
   display: flex;
   gap: 40px;
   align-items: center;
   padding-right: 45px;
 }
 
-.footer-a a{
+.footer-a a {
   color: white;
   text-decoration: none;
 }
 
-.salat-img{
+.salat-img {
   display: flex;
   justify-content: center;
-  width:90%;    
+  width: 90%;
   height: 30vh;
-  object-fit:cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin: 10px 60px 20px 60px;
-
 }
 
-.p-tag{
+.p-tag {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -204,131 +206,131 @@ body{
   font-size: 28px;
 }
 
-.buttons{
+.buttons {
   padding-top: 10px;
   margin-left: 60px;
   display: flex;
   gap: 40px;
 }
 
-.buttons button{
+.buttons button {
   border-radius: 15px;
   background-color: rgb(239, 238, 238);
   border: none;
   font-size: 20px;
-  font-weight:lighter;
+  font-weight: lighter;
   padding: 5px 18px 5px 15px;
   font-weight: 300;
 }
 
-.strich{
+.strich {
   background-color: rgb(236, 235, 235);
-  width: 90%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
+  width: 90%; /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
   height: 1px;
   margin-left: 50px;
   margin-top: 60px;
 }
 
-.zutaten-container{
-  width: 90%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
+.zutaten-container {
+  width: 90%; /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
   display: flex;
   margin-left: 60px;
   flex-direction: column;
 }
 
-.zutaten{
+.zutaten {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 15px;
 }
 
-.zutaten h2{
+.zutaten h2 {
   margin-right: 15px;
 }
 
-.zutaten input{
+.zutaten input {
   width: 200px;
   height: 28px;
   font-size: 18px;
   border-radius: 10px 0px 0px 10px;
 }
 
-.zutaten-stuck{
+.zutaten-stuck {
   margin-left: 60px;
   margin-top: 20px;
-  width:90%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
+  width: 90%; /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
 }
 
-.stucke{
+.stucke {
   font-size: 20px;
   border-spacing: 0;
-  width: 99%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
+  width: 99%; /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
   height: 350px;
 }
 
-.gray{
-  background-color:rgb(236, 235, 235);
+.gray {
+  background-color: rgb(236, 235, 235);
 }
 
-.wert{
+.wert {
   border-radius: 0px 10px 10px 0px;
 }
 
-.zahl{
+.zahl {
   border-radius: 10px 0px 0px 10px;
-  text-align:center;
+  text-align: center;
 }
 
-.footer-rezeptseite{
+.footer-rezeptseite {
   display: flex;
   flex-direction: column;
   margin-left: 60px;
 }
 
-
-.buttons-rezept{
+.buttons-rezept {
   padding-top: 10px;
   display: flex;
   gap: 40px;
 }
 
-.buttons-rezept button{
+.buttons-rezept button {
   border-radius: 15px;
   background-color: rgb(239, 238, 238);
   border: none;
   font-size: 20px;
-  font-weight:lighter;
+  font-weight: lighter;
   padding: 5px 18px 5px 15px;
   margin-bottom: 35px;
   font-weight: 300;
 }
 
-.footer-rezeptseite h3{
+.footer-rezeptseite h3 {
   display: flex;
   font-size: 25px;
   padding: 20px 0px 10px 0px;
   margin-top: 20px;
 }
 
-.beschreibung{ /* hier ist die Beschreibung vom Salat */
-  width: 96%;  /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
+.beschreibung { /* hier ist die Beschreibung vom Salat */
+  width: 96%; /* hier muss man gucken dass es nicht an Seite scrollbar sein soll */
 }
 
-.autor{
+.autor {
   margin-top: 40px;
 }
 
-.autor h2{
+.autor h2 {
   display: flex;
   font-size: 22px;
   margin-left: 60px;
 }
 
-.autor-img img{
+.autor-img img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   margin-top: 45px;
   margin-left: 60px;
@@ -336,21 +338,22 @@ body{
   justify-content: flex-start;
 }
 
-.autor-img{
+.autor-img {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 100px;
 }
 
-.autor-img h2{
+.autor-img h2 {
   display: flex;
   margin-top: 40px;
 }
 
-.menu a:hover{
-  text-decoration: underline solid 4px;
-  color: rgb(59,127,71);
+.menu a:hover {
+  -webkit-text-decoration: underline solid 4px;
+          text-decoration: underline solid 4px;
+  color: rgb(59, 127, 71);
   text-underline-offset: 6px;
 }
 
@@ -358,11 +361,6 @@ body{
   /* add this to look like mokup */
   margin: 0px 130px;
 }
-
-
-/*
-/ MEDIA QUERIES
-*/
 
 @media (max-width: 830px) {
   .erste-container {
