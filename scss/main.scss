@@ -12,6 +12,7 @@
 
     .show-mobile-nav {
         transform: translateX(0px) !important;
+        display: block !important;
     }
     .overflow {
         overflow: hidden;
@@ -26,6 +27,7 @@
         right: 0;
         bottom: 0;
         transform: translateX(999px);
+        display: none;
         z-index: 99;
         transition: all 1s;
 
