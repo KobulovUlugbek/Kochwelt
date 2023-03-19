@@ -1,11 +1,9 @@
 function showMobilNav() {
     toggleMobileNav();
-    console.log('goooo')
 }
 
 function closeMobilNav() {
     toggleMobileNav();
-    console.log('goooo')
 }
 
 
