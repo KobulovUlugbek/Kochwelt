@@ -58,18 +58,32 @@
   }
   .header-container {
     align-items: center;
+    align-items: center !important;
+  }
+  .header-container .logo-png {
+    width: 200px;
+    height: auto;
   }
   .erste-container {
-    padding: 50px 10px 50px 0px;
+    padding: 50px 10px 50px 10px !important;
+    flex-wrap: wrap;
   }
   .erste-container .img-ubersicht {
-    width: auto;
-    max-height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+    height: 300px;
   }
   .erste-container .img-ubersicht img {
     margin: 0px;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .erste-container .rezept-ubersicht {
+    align-items: center;
+  }
+  .erste-container .rezept-ubersicht > h2 {
+    margin-bottom: 6px;
   }
   .child-container {
     flex-direction: column;
@@ -86,10 +100,21 @@
   .rezept-ubersicht p {
     margin: 0px 0px 8px 0px;
   }
+  .suggestion-section .suggestion-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .suggestion-section .suggestion-content .suggestion {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 }
 @media (max-width: 700px) {
   .erste-container {
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 50px 0px;
   }
   .erste-container .img-ubersicht {
@@ -111,7 +136,7 @@
   }
   .letzte-container-child {
     flex-direction: column !important;
-    align-items: center;
+    align-items: center !important;
   }
   .letzte-container-child p {
     margin: 0px;
@@ -145,6 +170,10 @@
 
 body {
   margin: 0;
+}
+
+.d-none {
+  display: none;
 }
 
 .header-container {
@@ -500,4 +529,22 @@ body {
 .rezept-container {
   /* add this to look like mokup */
   margin: 0px 130px;
+}
+
+.suggestion-section {
+  background-color: #EEEEEE;
+  text-align: center;
+  padding: 50px 0px;
+}
+.suggestion-section > h2 {
+  padding-bottom: 16px;
+}
+.suggestion-section .suggestion-content {
+  display: flex;
+  justify-content: space-around;
+}
+.suggestion-section .suggestion-content .suggestion img {
+  width: 260px;
+  height: auto;
+  border-radius: 25px;
 }
