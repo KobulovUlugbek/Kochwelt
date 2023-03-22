@@ -7,91 +7,90 @@
     <title>Kochwelt</title>
     <link rel="shortcut icon" href="img/logo_small.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rezept.css">
     <script src="https://kit.fontawesome.com/9fdfcba871.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="includeHTML()" id="body">
     <div w3-include-html="header.html"></div> <!-- damit andere Html verbunden -->
-    <div class="rezept-container">
-        <div class="rezept-img">
-            <h2 class="p-tag">Sommer Salat</h2> <!-- da es eine Überschrift ist sollte man hier eine h2 nehmen nicht p-->
-            <img class="salat-img" src="./img/salat-for-rezept.jpg" alt="">
+    <div class="container">
+        <header class="header">
+            <h1>Sommer Salat</h1>
+            <img class="header-img" src="./img/salat-for-rezept.jpg" alt="">
             <div class="buttons">
-                <button><i class="fa-regular fa-clock"></i> 15 Min</button>
-                <button><i class="fa-solid fa-kitchen-set"></i> simpel</button>
-                <button><i class="fa-regular fa-calendar-days"></i> 5.03.2023</button>
+                <div><i class="fa-regular fa-clock"></i> 15 Min</div>
+                <div><i class="fa-solid fa-kitchen-set"></i> simpel</div>
+                <div><i class="fa-regular fa-calendar-days"></i> 5.03.2023</div>
             </div>
-        </div>
+        </header>
         <div class="strich"></div>
-        <div class="zutaten-container">
-            <div class="zutaten">
+        <section class="section">
+            <div class="portions-form">
                 <h2>Zutaten für</h2>
                 <input type="number" step="any" min="1" max="10" name="portionen" autocomplete="off" value="1">
                 <button class="rezept-offnen">Portionen</button>
             </div>
-        </div>
-        <div class="zutaten-stuck">
-            <table class="stucke">
-                <tr class="gray">
-                    <td class="zahl">1</td>
-                    <td class="wert">Tomaten</td>
+            <table class="ingridients">
+                <tr>
+                    <td>1</td>
+                    <td>Tomaten</td>
                 </tr>
-                <tr class="white">
-                    <td class="zahl">1</td>
-                    <td class="wert">Paprika</td>
+                <tr>
+                    <td>1</td>
+                    <td>Paprika</td>
                 </tr>
-                <tr class="gray">
-                    <td class="zahl">1/3</td>
-                    <td class="wert">Eisbergsalat</td>
+                <tr>
+                    <td>1/3</td>
+                    <td>Eisbergsalat</td>
                 </tr>
-                <tr class="white">
-                    <td class="zahl">4</td>
-                    <td class="wert">Radischen</td>
+                <tr>
+                    <td>4</td>
+                    <td>Radischen</td>
                 </tr>
-                <tr class="gray">
-                    <td class="zahl">1</td>
-                    <td class="wert">Gurke</td>
+                <tr>
+                    <td>1</td>
+                    <td>Gurke</td>
                 </tr>
-                <tr class="white">
-                    <td class="zahl">1/2</td>
-                    <td class="wert">Zwiebel</td>
+                <tr>
+                    <td>1/2</td>
+                    <td>Zwiebel</td>
                 </tr>
-                <tr class="gray">
-                    <td class="zahl">2</td>
-                    <td class="wert">Löffel Kräuteressig</td>
+                <tr>
+                    <td>2</td>
+                    <td>Löffel Kräuteressig</td>
                 </tr>
-                <tr class="white">
-                    <td class="zahl">Prise</td>
-                    <td class="wert">Salz</td>
+                <tr>
+                    <td>Prise</td>
+                    <td>Salz</td>
                 </tr>
-                <tr class="gray">
-                    <td class="zahl">2</td>
-                    <td class="wert">Löffel Olivenöl</td>
+                <tr>
+                    <td>2</td>
+                    <td>Löffel Olivenöl</td>
                 </tr>
             </table>
-        </div>
-        <div class="footer-rezeptseite">
-            <h3>Zubereitung</h3> <!-- Eine Überschrift-->
-            <div class="buttons-rezept">
-                <button><i class="fa-regular fa-clock"></i> ca.15 Minuten</button>
-                <button><i class="fa-regular fa-clock"></i> Gesamtzeit ca.15 Minuten</button>
+        </section>
+        <section class="section">
+            <h2>Zubereitung</h2>
+            <div class="buttons">
+                <div><i class="fa-regular fa-clock"></i> ca.15 Minuten</div>
+                <div><i class="fa-regular fa-clock"></i> Gesamtzeit ca.15 Minuten</div>
             </div>
             <p class="beschreibung">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur iure iste,
                 sunt ad, delectus dolorum saepe repellat, expedita similique quas accusantium autem nam vel. Cum
                 explicabo totam nesciunt, laudantium magni tenetur voluptas hic nisi odit ea eum quidem beatae
                 consequatur rem neque non molestiae veniam, veritatis adipisci. Atque, molestias!</p> <!-- Text auf p-->
-        </div>
-        <div class="autor">
+        </section>
+        <section class="section">
             <h2>Rezept erstellt von</h2>
-            <div class="autor-img">
-                <img src="./img/profil-photo.jpeg" alt="">
-                <h2>Ulugbek</h2>
+            <div class="autor-container">
+                <img class="autor-img" src="./img/profil-photo.jpeg" alt="">
+                <div>Ulugbek</div>
             </div>
-        </div>
+        </section>
     </div>
     <div w3-include-html="footer.html"></div> <!-- damit andere Html verbunden -->
     <script src="./js/main.js"></script>
