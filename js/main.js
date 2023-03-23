@@ -16,7 +16,7 @@ function toggleMobileNav() {
  */
 
 function loadRecipe() {
-    let recipe = recipes[0];
+    let recipe = recipes[1];
     setIdText('title',recipe.name);
     document.getElementById('img').src = `./img/${recipe.img}`;
     setIdText('zubereitungsZeitTop',recipe.zubereitungsZeit);
@@ -28,7 +28,7 @@ function loadRecipe() {
 
     for (let i = 0; i < recipe['zutaten'].length; i++) {
         const zutat = recipe['zutaten'][i];
-        document.getElementById('ingridients').innerHTML += tabel(zutat['menge'],zutat['name']);
+        document.getElementById('ingridients').innerHTML += tabel(zutat['menge'],zutat['einheit'],zutat['name']);
     }
     for (let i = 0; i < recipe['erstellt_von'].length; i++) {
         const element = recipe['erstellt_von'][i];
@@ -48,7 +48,7 @@ function portion() {
         let menge = zutat['menge'];
         menge = menge * Number(personNumber);
         menge = menge.toFixed(1);
-        document.getElementById('ingridients').innerHTML += tabel(menge,zutat['name']);
+        document.getElementById('ingridients').innerHTML += tabel(menge,zutat['einheit'],zutat['name']);
     }
 }
 

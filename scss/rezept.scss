@@ -63,7 +63,7 @@
     }
     
     > tbody > tr td:first-child {
-        width: 4em;
+        width: 7em;
     }
 
     > tbody > tr:nth-child(2n+1) {
@@ -84,9 +84,6 @@
     font-weight: 300;
 }
 
-.beschreibung {
-    // width: 96%;
-}
 
 .autor-container {
     display: flex;

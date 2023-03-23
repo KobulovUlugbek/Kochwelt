@@ -62,7 +62,7 @@
   border-radius: 10px;
 }
 .ingridients > tbody > tr td:first-child {
-  width: 4em;
+  width: 7em;
 }
 .ingridients > tbody > tr:nth-child(2n+1) {
   background-color: rgb(236, 235, 235);
