@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body onload="includeHTML()" id="body">
+<body onload="includeHTML(), init()" id="body">
     <div w3-include-html="header.html"></div> <!-- damit andere Html verbunden -->
     
     <div>
@@ -36,7 +36,7 @@
         </div>
         <div class="suggestion-section" id="suggestionSection">
             <h2>Lust auf was neues?</h2>
-            <div class="suggestion-content">
+            <div id="suggestion-content" class="suggestion-content">
                 <div class="suggestion">
                     <img src="./img/croissant.jpg">
                     <h3>Frische Croissants</h3>
@@ -63,6 +63,8 @@
         </div>
         <div w3-include-html="footer.html"></div> <!-- damit andere Html verbunden -->
     </div>
+    <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/genHTML.js"></script>
 </body>
 </html>
