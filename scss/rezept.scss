@@ -1,24 +1,4 @@
-.container {
-    width: 70vw;
-    margin: 0 auto;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    > h1 {
-        margin: 0;
-    }
-}
-
-.header-img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    border-radius: 10px;
-}
+@import '_base.scss';
 
 .strich {
     background-color: rgb(236, 235, 235);
@@ -26,13 +6,6 @@
     height: 1px;
     margin-left: 50px;
     margin-top: 60px;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    gap: 1rem;
 }
 
 .portions-form {
