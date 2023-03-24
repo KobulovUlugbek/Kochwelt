@@ -65,10 +65,11 @@ function init() {
 //Lust auf was neues
 
 function suggestion() {
-    document.getElementById('suggestion-content').innerHTML = '';
-    // recipes[0].name
-    // recipes[0].img
-    // ID = suggestion-content
-    
+    document.getElementById('suggestion-content').innerHTML = ''; 
+   
+    for (let i = 0; i < recipes.length; i++) {
+        let recipe = recipes[i];
+        rezeptSeite(recipe.img, recipe.name);
+    }
 }
 

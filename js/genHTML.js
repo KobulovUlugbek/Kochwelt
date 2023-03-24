@@ -8,3 +8,9 @@ function tabel(zahl,einheit, name) {
     `;
 }
 
+function rezeptSeite(img, name){
+    document.getElementById('suggestion-content').innerHTML += `<div class="suggestion">
+         <img src="./img/${img}">
+         <h3>${name}</h3>
+         </div>`;
+}
