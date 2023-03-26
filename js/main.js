@@ -67,9 +67,9 @@ function init() {
 
 function suggestion() {
     document.getElementById('suggestion-content').innerHTML = ''; 
-   
-    for (let i = 0; i < recipes.length; i++) {
-        let recipe = recipes[i];
+    const shuffled = recipes.sort(() => Math.random() - Math.random()).slice(0, 3);
+    for (let i = 0; i < shuffled.length; i++) {
+        let recipe = shuffled[i];
         rezeptSeite(recipe.img, recipe.name);
     }
 }
