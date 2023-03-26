@@ -17,6 +17,7 @@ function toggleMobileNav() {
 
 function loadRecipe(id) {
     let recipe = recipes[id];
+    document.title = `${recipe.name} - Kochwelt`;
     setIdText('title',recipe.name);
     document.getElementById('img').src = `./img/${recipe.img}`;
     setIdText('zubereitungsZeitTop',recipe.zubereitungsZeit);
