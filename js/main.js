@@ -60,6 +60,7 @@ function setIdText(id,text) {
 function init() {
     //beim laden der Webseite 
     suggestion();
+    renderRecipe();
 }
 
 //Lust auf was neues
@@ -72,6 +73,35 @@ function suggestion() {
         rezeptSeite(recipe.img, recipe.name);
     }
 }
+
+
+// ERSTER CONTAINER
+
+function getRandomRecipe() {
+    return recipes[Math.floor(Math.random() * recipes.length)];
+}
+
+function renderRecipe() {
+    const recipe = getRandomRecipe();
+    console.log(`WTF? ${recipe}`);
+    const rootEl = document.getElementById('erste-container');
+    rootEl.innerHTML = /* html */`
+            <div class="img-ubersicht">
+                <img src="img/${recipe.img}">
+            </div>
+
+            <div class="rezept-ubersicht">
+                <h2>${recipe.name}</h2>  <!-- H1 wird für den Namen der Webseite benutzt-->
+                <p class="beschreibung-gericht">${recipe.desc}</p> <!-- Für eine Beschreibung nummt man kein h2-->
+                <div class="button-rezept">
+                    <button class="rezept-offnen">Rezept öffnen</button>
+                </div>
+            </div>
+        </div>
+    `
+}
+
+// CONTACT PAGE
 
 function showSuccess() {
     document.getElementById('name').value = '';
