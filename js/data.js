@@ -27,8 +27,8 @@ let recipes = [
                 name: "Paprika"
             },
             {
-                menge: 0.3,
-                einheit: "",
+                menge: 250,
+                einheit: "g",
                 name: "Eisbergsalat"
             },
             {
@@ -42,7 +42,7 @@ let recipes = [
                 name: "Gurke"
             },
             {
-                menge: 0.5,
+                menge: 1/2,
                 einheit: "",
                 name: "Zwiebel"
             },
@@ -57,8 +57,8 @@ let recipes = [
                 name: "Salz"
             },
             {
-                menge: 2,
-                einheit: "Löffel",
+                menge: 1,
+                einheit: "EL",
                 name: "Olivenöl"
             },
         ]
@@ -81,27 +81,33 @@ let recipes = [
         ],
         zutaten: [
             {
-                menge: 0.29,
-                einheit: "",
+                menge: 2,
+                einheit:"Stück",
+                /* menge: 0.29,
+                einheit: "", */
                 name: "Ei"
             },
             {
-                menge: 28.57,
+                menge: 250,
+                /* menge: 28.57, */
                 einheit: "ml",
                 name: "Milch"
             },
             {
-                menge: 0.14,
+                menge:1,
+                /* menge: 0.14, */
                 einheit: "Prise",
                 name: "Salz"
             },
             {
-                menge: 28.57,
+                menge: 250,
+                /* menge: 28.57, */
                 einheit: "g",
                 name: "Mehl"
             },
             {
-                menge: 8.57,
+                menge:80,
+                /* menge: 8.57, */
                 einheit: "ml",
                 name: "Mineralwasser"
             },
@@ -134,7 +140,8 @@ let recipes = [
                 name: "Schokolade"
             },
             {
-                menge: 0.75,
+                menge:1,
+                /* menge: 0.75, */
                 einheit: "",
                 name: "Ei(er)"
             },
@@ -149,7 +156,7 @@ let recipes = [
                 name: "Zucker"
             },
             {
-                menge: 12.5,
+                menge: 12,
                 einheit: "g",
                 name: "Butter"
             },

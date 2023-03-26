@@ -47,9 +47,9 @@ function portion() {
         const zutat = recipes[0]['zutaten'][i];
         let menge = zutat['menge'];
         menge = menge * Number(personNumber);
-        menge = menge.toFixed(1);
+        menge = menge.toFixed();
         document.getElementById('ingridients').innerHTML += tabel(menge,zutat['einheit'],zutat['name']);
-    }
+    }               
 }
 
 function setIdText(id,text) {
