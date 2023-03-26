@@ -93,7 +93,7 @@ let recipes = [
             {
                 menge: 0.14,
                 einheit: "Prise",
-                name: "Sakz"
+                name: "Salz"
             },
             {
                 menge: 28.57,
