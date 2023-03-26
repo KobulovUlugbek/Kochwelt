@@ -15,8 +15,8 @@ function toggleMobileNav() {
  * Rezept
  */
 
-function loadRecipe() {
-    let recipe = recipes[1];
+function loadRecipe(id) {
+    let recipe = recipes[id];
     setIdText('title',recipe.name);
     document.getElementById('img').src = `./img/${recipe.img}`;
     setIdText('zubereitungsZeitTop',recipe.zubereitungsZeit);
