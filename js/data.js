@@ -7,7 +7,7 @@ let recipes = [
         schwierigkeit: "lappen",
         img: 'salat-for-rezept.jpg',
         date: '05.03.2023',
-        desc: '',
+        desc: 'Ein frischer Sommer Salat perfekt für heiße Stunden.',
         erstellt_von: [
             {
                 autor: 'Ulugbek',
