@@ -265,7 +265,6 @@ body {
 }
 
 .child-container img {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 260px;
@@ -316,7 +315,6 @@ body {
 }
 
 .letzte-container-child img {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 260px;
@@ -341,7 +339,6 @@ body {
 
 .logo-s img {
   width: 50px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 20px 0px 20px 40px;
@@ -399,4 +396,4 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 25px;
-}/*# sourceMappingURL=main.css.map */
+}

@@ -73,3 +73,16 @@ function suggestion() {
     }
 }
 
+function showSuccess() {
+    document.getElementById('name').value = '';
+    document.getElementById('message').value = '';
+    toggleSuccessContent();
+}
+
+function hideSuccess() {
+    toggleSuccessContent();
+}
+
+function toggleSuccessContent() {
+    document.querySelector('#success').classList.toggle('d-none');
+}
