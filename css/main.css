@@ -357,8 +357,11 @@ body {
 }
 
 .footer-a a {
-  color: white;
+  color: rgba(255, 255, 255, 0.589);
   text-decoration: none;
+}
+.footer-a a:hover {
+  color: rgb(255, 255, 255);
 }
 
 .p-tag {

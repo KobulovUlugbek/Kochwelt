@@ -189,11 +189,16 @@
     gap: 40px;
     align-items: center;
     padding-right: 45px;
+    
   }
   
   .footer-a a{
-    color: white;
+    color: rgba(255, 255, 255, 0.589);
     text-decoration: none;
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+
   }
   
   .p-tag{
