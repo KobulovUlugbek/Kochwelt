@@ -8,6 +8,7 @@ let recipes = [
         img: 'salat-for-rezept.jpg',
         date: '05.03.2023',
         desc: 'Ein frischer Sommer Salat perfekt für heiße Stunden.',
+        id: 0,
         erstellt_von: [
             {
                 autor: 'Ulugbek',
@@ -72,6 +73,7 @@ let recipes = [
         img: 'pancakes.jpg',
         date: '05.03.2023',
         desc: 'Ob als Pfannkuchen, Eierkuchen oder Palatschinken – wir lieben sie einfach. Sie sind so einfach und schnell zubereitet und schmecken mit jeder Füllung fantastisch',
+        id: 1,
         erstellt_von: [
             {
                 autor: 'Ulugbek',
@@ -126,6 +128,7 @@ let recipes = [
         img: 'chocolate-mousse.jpg',
         date: '05.03.2023',
         desc: 'Egal ob zu Weihnachten, Silvester oder einfach zum Naschen zwischendurch – Mit diesem Rezept wird auch deine Mousse au Chocolat richtig schön luftig. Probier es selbst!',
+        id: 2,
         erstellt_von: [
             {
                 autor: 'Ulugbek',

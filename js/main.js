@@ -15,7 +15,19 @@ function toggleMobileNav() {
  * Rezept
  */
 
-function loadRecipe(id) {
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function loadRecipe() {
+    let mid = getParameterByName("id", window.location.href);
+    let id = mid || 1;
     let recipe = recipes[id];
     document.title = `${recipe.name} - Kochwelt`;
     setIdText('title',recipe.name);
@@ -71,7 +83,7 @@ function suggestion() {
     const shuffled = recipes.sort(() => Math.random() - Math.random()).slice(0, 3);
     for (let i = 0; i < shuffled.length; i++) {
         let recipe = shuffled[i];
-        rezeptSeite(recipe.img, recipe.name);
+        rezeptSeite(recipe.img, recipe.name, recipe.id);
     }
 }
 
@@ -116,4 +128,9 @@ function hideSuccess() {
 
 function toggleSuccessContent() {
     document.querySelector('#success').classList.toggle('d-none');
+}
+
+
+function openRecipe(id) {
+    location.replace(`./rezept.html?id=${id}`);
 }
