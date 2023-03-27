@@ -107,7 +107,7 @@ function renderRecipe() {
                 <h2>${recipe.name}</h2>  <!-- H1 wird für den Namen der Webseite benutzt-->
                 <p class="beschreibung-gericht">${recipe.desc}</p> <!-- Für eine Beschreibung nummt man kein h2-->
                 <div class="button-rezept">
-                    <button class="rezept-offnen">Rezept öffnen</button>
+                    <button class="rezept-offnen" onclick="openRecipe(${recipe.id})">Rezept öffnen</button>
                 </div>
             </div>
         </div>
