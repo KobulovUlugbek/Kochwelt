@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - Kochwelt</title>
+    <title>Datenschutzerklärung  - Kochwelt</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/9fdfcba871.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body onload="includeHTML()" id="body">
+
+    <div w3-include-html="./includes/header.html"></div>
+
+    <div class="datenschutz-container">
+
+
     <h1>Datenschutzerklärung</h1>
 <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
 <p>Ulugbek Kobulov</p>
@@ -103,6 +115,11 @@
 <p></p><p><em>Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener">externe Datenschutzbeauftragte</a> (Version #2020-09-30).</em></p>
 
 
+</div>
 
+<div w3-include-html="./includes/footer.html"></div>
+<script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/genHTML.js"></script>
 </body>
 </html>
