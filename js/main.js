@@ -54,15 +54,17 @@ function loadRecipe() {
 
 function portion() {
     let personNumber =  document.getElementById('number-of-portions').value;
+    let id = getParameterByName("id", window.location.href);
+    id = id || 1;
 
     document.getElementById('ingridients').innerHTML = '';    
-    for (let i = 0; i < recipes[0]['zutaten'].length; i++) {
-        const zutat = recipes[0]['zutaten'][i];
+    for (let i = 0; i < recipes[id]['zutaten'].length; i++) {
+        const zutat = recipes[id]['zutaten'][i];
         let menge = zutat['menge'];
         menge = menge * Number(personNumber);
         menge = menge.toFixed();
         document.getElementById('ingridients').innerHTML += tabel(menge,zutat['einheit'],zutat['name']);
-    }               
+    }
 }
 
 function setIdText(id,text) {
@@ -96,7 +98,6 @@ function getRandomRecipe() {
 
 function renderRecipe() {
     const recipe = getRandomRecipe();
-    console.log(`WTF? ${recipe}`);
     const rootEl = document.getElementById('erste-container');
     rootEl.innerHTML = /* html */`
             <div class="img-ubersicht">
