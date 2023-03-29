@@ -27,6 +27,13 @@
   gap: 1rem;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container > h1 {
   margin-bottom: 1rem;
 }
