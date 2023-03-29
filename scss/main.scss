@@ -1,5 +1,5 @@
+@import '_base';
 @import '_media';
-
 
 *{
     margin:0;
@@ -14,14 +14,16 @@
   display: none;
 }
 
-  .header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    box-shadow: 0 0 16px 0 #0003;
-    padding: 0 10vw;
-  }
-  
+  .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-container {
+  box-shadow: 0 0 16px 0 #0003;
+}
+
   .logo-png{
     height: 96px;
     width: auto;
@@ -173,6 +175,9 @@
   
   .footer{
     background-color: rgb(76, 73, 73);
+  }
+  
+  .footer-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
