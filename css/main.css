@@ -94,8 +94,8 @@
     height: auto;
   }
   .erste-container {
-    padding: 50px 10px 50px 10px !important;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .erste-container .img-ubersicht {
     width: 100%;
