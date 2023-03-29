@@ -139,36 +139,33 @@
   
   .letzte-container{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
   }
   
   .letzte-container h2{
-    display: flex;
-    padding: 25px;
     font-size: 25px;
   }
   
   .letzte-container-child{
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
   }
   
   .letzte-container-child img{
     height: fit-content;
     width: 260px;
-    border-radius: 25px 25px 25px 25px;
-    align-items: center;
-    padding: 5px;
-    margin-right: 38px;
-    margin-bottom: 90px;
+    border-radius: 25px;
   }
   
   .letzte-container-child p{
     font-size: 18px;
-    margin: 15px 50px 10px;
+  }
+  
+  .letzte-container-child p:first-child {
+    margin-bottom: 1rem;
   }
   
   .footer{
