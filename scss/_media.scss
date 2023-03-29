@@ -208,17 +208,18 @@
 
 
     .footer {
-        flex-direction: column;
-
         .footer-a {
             padding: 0px;
-            margin-bottom: 16px;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
         }
 
         .logo-s {
             img {
                 padding: 0px;
                 margin: 16px 0px;
+
             }
         }
     }

@@ -194,12 +194,11 @@
   .letzte-container-child img {
     margin: 0px 0px 16px 0px;
   }
-  .footer {
-    flex-direction: column;
-  }
   .footer .footer-a {
     padding: 0px;
-    margin-bottom: 16px;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
   }
   .footer .logo-s img {
     padding: 0px;
