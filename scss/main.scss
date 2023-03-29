@@ -54,18 +54,15 @@
 //     display: none;
 //   }
   
-  .erste-container{
+  .erste-container {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     gap: 35px;
-    padding: 50px 10px 50px 50px;
   }
   
   .img-ubersicht img{
     height: 300px;
     border-radius: 2%;
-    margin-left: 40px;
   }
   
   .rezept-ubersicht{
