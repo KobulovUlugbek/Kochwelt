@@ -17,43 +17,41 @@
 <body onload="includeHTML(), init()" id="body">
     <div w3-include-html="./includes/header.html"></div> <!-- damit andere Html verbunden -->
     
-    <div>
-        <div class="container">
-            <div id="erste-container" class="container erste-container"></div>
-        </div>
+    <div class="container">
+        <div id="erste-container" class="container erste-container"></div>
+    </div>
 
-        <div class="suggestion-section" id="suggestionSection">
-            <div class="container">
-                <h2>Lust auf was neues?</h2>
-                <div id="suggestion-content" class="suggestion-content">
-                    <div class="suggestion">
-                        <img src="./img/croissant.jpg">
-                        <h3>Frische Croissants</h3>
-                    </div>
-                    <div class="suggestion">
-                        <img src="./img/croissant.jpg">
-                        <h3>Frische Croissants</h3>
-                    </div>
-                    <div class="suggestion">
-                        <img src="./img/croissant.jpg">
-                        <h3>Frische Croissants</h3>
-                    </div>
+    <div class="suggestion-section" id="suggestionSection">
+        <div class="container">
+            <h2>Lust auf was neues?</h2>
+            <div id="suggestion-content" class="suggestion-content">
+                <div class="suggestion">
+                    <img src="./img/croissant.jpg">
+                    <h3>Frische Croissants</h3>
+                </div>
+                <div class="suggestion">
+                    <img src="./img/croissant.jpg">
+                    <h3>Frische Croissants</h3>
+                </div>
+                <div class="suggestion">
+                    <img src="./img/croissant.jpg">
+                    <h3>Frische Croissants</h3>
                 </div>
             </div>
         </div>
-        
-        <div class="container letzte-container">
-            <h2>Pfanne vs. Wok - Was ist besser?</h2>
-            <div class="letzte-container-child">
-                <div class="left">
-                    <p>Die Entscheidung zwischen einer Pfanne und einem Wok hängt von der Art des Kochens ab, die Sie bevorzugen. sind einige Vor- und Nachteile beider Optionen:</p>
-                    <p>Insgesamt hängt die Entscheidung zwischen einer Pfanne und einem Wok von Ihren persönlichen Vorlieben und Kochbedürfnissen ab. Wenn Sie eine vielseitige Kochpfanne benötigen, ist eine Pfanne möglicherweise die bessere Wahl. Wenn Sie jedoch gerne rühren-braten und größere Mengen an Zutaten zubereiten möchten, kann ein Wok die bessere Option sein.</p>
-                </div> <!-- Da es keine Überschrift ist, wird ein p genommen-->
-                <img class="right" src="img/wok.jpg" alt="">
-            </div>
-        </div>
-        <div w3-include-html="./includes/footer.html"></div> <!-- damit andere Html verbunden -->
     </div>
+        
+    <div class="container letzte-container">
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="letzte-container-child">
+            <div class="left">
+                <p>Die Entscheidung zwischen einer Pfanne und einem Wok hängt von der Art des Kochens ab, die Sie bevorzugen. sind einige Vor- und Nachteile beider Optionen:</p>
+                <p>Insgesamt hängt die Entscheidung zwischen einer Pfanne und einem Wok von Ihren persönlichen Vorlieben und Kochbedürfnissen ab. Wenn Sie eine vielseitige Kochpfanne benötigen, ist eine Pfanne möglicherweise die bessere Wahl. Wenn Sie jedoch gerne rühren-braten und größere Mengen an Zutaten zubereiten möchten, kann ein Wok die bessere Option sein.</p>
+            </div> <!-- Da es keine Überschrift ist, wird ein p genommen-->
+            <img class="right" src="img/wok.jpg" alt="">
+        </div>
+    </div>
+    <div w3-include-html="./includes/footer.html"></div> <!-- damit andere Html verbunden -->
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/genHTML.js"></script>
