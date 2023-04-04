@@ -58,6 +58,7 @@
     display: flex;
     flex-direction: row;
     gap: 35px;
+    margin-bottom: 50px;
   }
   
   .img-ubersicht img{
@@ -85,15 +86,17 @@
     margin-bottom: 100px;
   }
   
-  .rezept-offnen{
+  .rezept-offnen {
+    display: flex;
     color: white;
     background-color: green;
     width: 200px;
     height: 35px;
     font-size: 18px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     border: none;
-    cursor: pointer;
+    text-decoration: none;
   }
   
   .button-rezept{
@@ -142,6 +145,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 50px;
   }
   
   .letzte-container h2{
@@ -224,13 +228,21 @@
   .suggestion-section {
     background-color: #EEEEEE;
     text-align: center;
-    padding: 50px 0px;
-    & > h2 {
+    padding: 30px 0px;
+    margin-bottom: 50px;
+    & h2 {
       padding-bottom: 16px;
     }
     .suggestion-content {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 30px;
+
+      > a {
+        text-decoration: none;
+        color: #000;
+      }
 
       .suggestion {
         width: 260px;
@@ -259,5 +271,7 @@
     gap: 35px;
     padding: 50px 10px 50px 50px;
   }
+
+
 
   

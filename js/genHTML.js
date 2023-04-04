@@ -9,8 +9,12 @@ function tabel(zahl,einheit, name) {
 }
 
 function rezeptSeite(img, name, id){
-    document.getElementById('suggestion-content').innerHTML += /*html */`<div class="suggestion" onclick="openRecipe(${id})">
-         <img src="./img/${img}">
-         <h3>${name}</h3>
-         </div>`;
+    document.getElementById('suggestion-content').innerHTML += /*html */`
+        <a href="/rezept.html?id=${id}">
+            <div class="suggestion">
+                <img src="./img/${img}">
+                <h3>${name}</h3>
+            </div>
+        </a>
+        `;
 }

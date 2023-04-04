@@ -41,7 +41,7 @@ function loadRecipe() {
 
     for (let i = 0; i < recipe['zutaten'].length; i++) {
         const zutat = recipe['zutaten'][i];
-        document.getElementById('ingridients').innerHTML += tabel(zutat['menge'],zutat['einheit'],zutat['name']);
+        document.getElementById('ingridients').innerHTML += tabel(getFraction(zutat['menge'], zutat['einheit']),zutat['einheit'],zutat['name']);
     }
     for (let i = 0; i < recipe['erstellt_von'].length; i++) {
         const element = recipe['erstellt_von'][i];
@@ -62,9 +62,22 @@ function portion() {
         const zutat = recipes[id]['zutaten'][i];
         let menge = zutat['menge'];
         menge = menge * Number(personNumber);
-        menge = menge.toFixed();
+        menge = getFraction(menge, zutat['einheit']);
         document.getElementById('ingridients').innerHTML += tabel(menge,zutat['einheit'],zutat['name']);
     }
+}
+
+function getFraction(zahl, einheit) {
+    if(einheit == 'g' || einheit == 'ml' || einheit == 'Prise'){
+        return zahl.toFixed(1);
+    };
+    if(zahl == ''){
+        return '';
+    }
+    let x = new Fraction(zahl);
+    let res = x.toFraction(true);
+    return res;
+    
 }
 
 function setIdText(id,text) {
@@ -76,6 +89,7 @@ function init() {
     //beim laden der Webseite 
     suggestion();
     renderRecipe();
+    includeHTML();
 }
 
 //Lust auf was neues
@@ -108,7 +122,7 @@ function renderRecipe() {
                 <h2>${recipe.name}</h2>  <!-- H1 wird für den Namen der Webseite benutzt-->
                 <p class="beschreibung-gericht">${recipe.desc}</p> <!-- Für eine Beschreibung nummt man kein h2-->
                 <div class="button-rezept">
-                    <button class="rezept-offnen" onclick="openRecipe(${recipe.id})">Rezept öffnen</button>
+                    <a class="rezept-offnen" href="rezept.html?id=${recipe.id}">Rezept öffnen</a>
                 </div>
             </div>
         </div>
@@ -121,6 +135,7 @@ function showSuccess() {
     document.getElementById('name').value = '';
     document.getElementById('message').value = '';
     toggleSuccessContent();
+    return false;
 }
 
 function hideSuccess() {
@@ -132,6 +147,6 @@ function toggleSuccessContent() {
 }
 
 
-function openRecipe(id) {
-    location.replace(`./rezept.html?id=${id}`);
-}
+// function openRecipe(id) {
+//     location.replace(`./rezept.html?id=${id}`);
+// }

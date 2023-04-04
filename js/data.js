@@ -28,8 +28,8 @@ let recipes = [
                 name: "Paprika"
             },
             {
-                menge: 250,
-                einheit: "g",
+                menge: 1/4,
+                einheit: "",
                 name: "Eisbergsalat"
             },
             {
@@ -43,7 +43,7 @@ let recipes = [
                 name: "Gurke"
             },
             {
-                menge: 1/2,
+                menge: 0.5,
                 einheit: "",
                 name: "Zwiebel"
             },
@@ -83,33 +83,33 @@ let recipes = [
         ],
         zutaten: [
             {
-                menge: 2,
-                einheit:"Stück",
+                menge: 0.5,
+                einheit:"",
                 /* menge: 0.29,
                 einheit: "", */
                 name: "Ei"
             },
         
             {
-                menge: 250,
+                menge: 28.5,
                 /* menge: 28.57, */
                 einheit: "ml",
                 name: "Milch"
             },
             {
-                menge:1,
+                menge:0.1,
                 /* menge: 0.14, */
                 einheit: "Prise",
                 name: "Salz"
             },
             {
-                menge: 250,
+                menge: 28.57,
                 /* menge: 28.57, */
                 einheit: "g",
                 name: "Mehl"
             },
             {
-                menge:80,
+                menge:8.6,
                 /* menge: 8.57, */
                 einheit: "ml",
                 name: "Mineralwasser"
@@ -144,7 +144,7 @@ let recipes = [
                 name: "Schokolade"
             },
             {
-                menge:1,
+                menge:0.5,
                 /* menge: 0.75, */
                 einheit: "",
                 name: "Ei(er)"
@@ -163,6 +163,193 @@ let recipes = [
                 menge: 12,
                 einheit: "g",
                 name: "Butter"
+            },
+        ]
+    },
+    {
+        name: "Schneller Tortelliniauflauf",
+        instructions: `
+        Erbsen in Salzwasser 3 Minuten blanchieren, anschließend abschrecken. Mais abtropfen lassen. Paprika vierteln, Kerngehäuse entfernen und in Streifen schneiden. Schinken in dünne Streifen schneiden. Zwiebel und Knoblauch schälen und fein würfeln.<br>
+        Öl in einer Pfanne erhitzen, Zwiebel und Knoblauch darin 2 Minuten dünsten, Paprika zugeben und weitere 2 Minuten braten. Mit Milch und Sahne ablöschen, mit Salz, Pfeffer und Paprikapulver würzen und 3 Minuten köcheln lassen. Backofen auf 200°C Umluft vorheizen. <br>
+        In der Zwischenzeit die Tortellini in reichlich Salzwasser 2 Minuten al dente kochen, abgießen und gut abtropfen.<br>
+        Tortellini mit Gemüse, Schinken, Sauce und der Hälfte des Käses mischen, in eine Auflaufform geben und mit dem restlichen Käse bestreuen.<br>
+        Auflauf im vorgeheizten Backofen für 10-15 Minuten gold-braun backen.
+
+        `,
+        zubereitungsZeit: 20,
+        gesamtZeit: 2.5,
+        schwierigkeit: "Einfach",
+        img: 'tortellini.jpg',
+        date: '05.03.2023',
+        desc: 'Dieser Tortelliniauflauf ist ruckzuck fertig und schmeckt der ganzen Familie.',
+        id: 3,
+        erstellt_von: [
+            {
+                autor: 'Ulugbek',
+                img:'profil-photo.jpeg',
+
+            }
+        ],
+        zutaten: [
+            {
+                menge: 50,
+                einheit: "g",
+                name: "TK-Erbsen"
+            },
+            {
+                menge:0.5,
+                /* menge: 0.75, */
+                einheit: "",
+                name: " Dose(n) Mais"
+            },
+            {
+                menge: 0.5,
+                einheit: "",
+                name: "rote Paprika"
+            },
+            {
+                menge: 50,
+                einheit: "g",
+                name: "Kochschinken"
+            },
+            {
+                menge: 0.5,
+                einheit: "",
+                name: "Zwiebel"
+            },
+            {
+                menge: 0.5,
+                einheit: "",
+                name: "Zehe(n) Knoblauch"
+            },
+            {
+                menge: 0.5,
+                einheit: "EL",
+                name: "Rapsöl"
+            },
+            {
+                menge: 62.5,
+                einheit: "ml",
+                name: "Milch"
+            },
+            {
+                menge: 62.5,
+                einheit: "ml",
+                name: "Schlagsahne"
+            },
+            {
+                menge: 200,
+                einheit: "g",
+                name: "Tortellini (Kühlregal)"
+            },
+            {
+                menge: 50,
+                einheit: "g",
+                name: "Gratinkäse"
+            },
+            {
+                menge: '',
+                einheit: "",
+                name: "Salz"
+            },
+            {
+                menge: '',
+                einheit: "",
+                name: "Pfeffer"
+            },
+        ]
+    },
+    {
+        name: "Gebratene Nudeln",
+        instructions: `
+        Die Nudeln mit warmem Wasser übergießen, ca. 15 Min. ziehen lassen (bzw. nach Packungsangabe kochen), bis sie gar, aber nicht zu weich sind, und dann abtropfen lassen.<br>
+
+        Das Hähnchenfleisch in kleine Stücke schneiden, in gesalzenem Wasser kochen und abtropfen lassen.<br>
+
+        Etwas Öl in einen heißen Wok oder eine Pfanne geben, darin das verquirlte Ei kurz braten und verrühren, dann die Zwiebel hinzufügen und ganz kurz weiter braten. Die Karottenstreifen und den Lauch mit hineingeben und kurz braten. Dann die Nudeln mit braten, mit Salz, Zucker und der dunklen Sojasauce würzen, gut mischen und weiter braten.
+        <br>
+        Das Fleisch und die Sojasprossen hinzufügen und in der Hitze kurz untermischen. Etwas weißen Pfeffer und ein bisschen Sesamöl (ca. 1/2 - 1 TL) hineinmischen und die Nudeln servieren.
+
+        `,
+        zubereitungsZeit: 20,
+        gesamtZeit: 0.5,
+        schwierigkeit: "Einfach",
+        img: 'china.jpg',
+        date: '05.03.2023',
+        desc: 'Gebratene Nudeln wie vom Asiaten / China Imbiss',
+        id: 4,
+        erstellt_von: [
+            {
+                autor: 'Ulugbek',
+                img:'profil-photo.jpeg',
+
+            }
+        ],
+        zutaten: [
+            {
+                menge: 125,
+                einheit: "g",
+                name: "Woknudeln"
+            },
+            {
+                menge: 1,
+                einheit: "handvoll",
+                name: "Karotte(n), in Streifen geschnitten"
+            },
+            {
+                menge: 1,
+                einheit: "handvoll",
+                name: "Sojasprossen"
+            },
+            {
+                menge: 1,
+                einheit: "handvoll",
+                name: "Lauch, kleingeschnitten"
+            },
+            {
+                menge: 1,
+                einheit: "EL",
+                name: "Zwiebel(n), gehackt"
+            },
+            {
+                menge: 1,
+                einheit: "",
+                name: "Ei(er) verquirlt"
+            },
+            {
+                menge: 80,
+                einheit: "g",
+                name: "Hähnchenfleisch"
+            },
+            {
+                menge: 0.5,
+                einheit: "TL",
+                name: "Zucker"
+            },
+            {
+                menge: 1,
+                einheit: "EL",
+                name: "Sojasauce, dunkle"
+            },
+            {
+                menge: '',
+                einheit: 'etwas',
+                name: "Pfeffer"
+            },
+            {
+                menge: '',
+                einheit: 'etwas',
+                name: "Salz"
+            },
+            {
+                menge: '',
+                einheit: 'etwas',
+                name: "Sesamöl"
+            },
+            {
+                menge: "",
+                einheit: 'etwas',
+                name: "Öl zum Braten"
             },
         ]
     },

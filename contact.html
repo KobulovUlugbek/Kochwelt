@@ -31,12 +31,12 @@
         <h2>Contact Us</h2>
         <div class="content">
            <div class="form">
-                <form>
+                <form onsubmit="showSuccess(); return false">
                     <label for="name">FULL NAME</label>
                     <input type="text" name="name" id="name" placeholder="Name" required>
                     <label for="message">MESSAGE</label>
                     <textarea name="message" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
-                    <input type="button" value="Send Message" onclick="showSuccess()"> 
+                    <button type="submit">Senden</button>
                 </form>
            </div>
         </div>
