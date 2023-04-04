@@ -31,7 +31,11 @@
         <section class="section">
             <div class="portions-form">
                 <h2>Zutaten für</h2>
-                <input id="number-of-portions" type="number" step="any" min="1" max="10" name="portionen" autocomplete="off" value="1">
+
+                <input id="number-of-portions" type="number" step="any" min="1" max="10" name="portionen" autocomplete="off" value="1"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="1"/>
+
                 <button onclick="portion()" class="rezept-offnen">Portionen</button>
             </div>
             <table class="ingridients">
